@@ -13,17 +13,17 @@ def add_task():
     tasks.append(task)
     return redirect('/')
 
-@app.route('/edit/<int:task_id>', methods=['GET, POST'])
+@app.route('/edit/<int:task_id>', methods=['GET', 'POST'])
 def edit_task(task_id):
     if (request.method == 'POST'):
         new_task = request.form['task']
-        tasks[task_id - 1] = new_task
+        tasks[task_id] = new_task
         return redirect('/')
     
-    task = tasks[task_id - 1]
+    task = tasks[task_id]
     return render_template('edit.html', task=task, task_id=task_id)
 
 @app.route('/delete/<int:task_id>')
 def delete_task(task_id):
-    del tasks[task_id - 1]
+    del tasks[task_id]
     return redirect('/')
