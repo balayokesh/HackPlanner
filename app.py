@@ -23,7 +23,7 @@ def fetch_from_db():
 def add_to_db(task):
     conn = sqlite3.connect(db)
     c = conn.cursor()
-    c.execute('INSERT INTO tasks (task) VALUES (?)', (task))
+    c.execute('INSERT INTO tasks (task) VALUES (?)', (task,))
     conn.commit()
     conn.close()
 
