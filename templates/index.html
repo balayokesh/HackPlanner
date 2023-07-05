@@ -19,9 +19,9 @@
     <ul>
         {% for task in tasks %}
         <li>
-            {{ task }}
-            <a href="/edit/{{ tasks.index(task) }}">Edit</a>
-            <a href="/delete/{{ tasks.index(task) }}">Delete</a>
+            {{ task[1] }}
+            <a href="/edit/{{ task[0] }}">Edit</a>
+            <a href="/delete/{{ task[0] }}">Delete</a>
         </li>
         {% endfor %}
     </ul>
