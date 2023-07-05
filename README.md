@@ -17,13 +17,13 @@ cd HackPlanner
 flask run
 ```
 
-#### Tech stack:
+### Tech stack:
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg" height='50' title='Flask' alt='Flask' /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original-wordmark.svg" height='50' title='SQLite' alt='SQLite' />
 
-### Screenshots
-![image](https://github.com/balayokesh/HackPlanner/assets/59578892/1b330647-16de-48ba-99a1-66c980ece70a)  
-![image](https://github.com/balayokesh/HackPlanner/assets/59578892/b09d5876-5aac-43ec-a459-5079262d00e7)  
-![image](https://github.com/balayokesh/HackPlanner/assets/59578892/d7be15bb-5bee-43c6-9e79-480a6d131bd7)
+### Screenshots:
+![image](https://github.com/balayokesh/HackPlanner/assets/59578892/14ada109-a6b3-4dc7-a9f7-275d41750a82)  
+![image](https://github.com/balayokesh/HackPlanner/assets/59578892/f560856c-e83e-4fe3-be04-0cc20a8a5ee8)  
+![image](https://github.com/balayokesh/HackPlanner/assets/59578892/ce110f5d-2e5c-493b-8228-4ccac491eb04)
 
 
 
