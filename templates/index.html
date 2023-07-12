@@ -22,9 +22,41 @@
             {{ task[1] }}
             <a href="/edit/{{ task[0] }}">Edit</a>
             <a href="/delete/{{ task[0] }}">Delete</a>
+            <button onclick="setReminder('{{ task[1] }}')">Remind me</button>
         </li>
         {% endfor %}
     </ul>
+
+    <script>
+
+        function sendEmail(task) {
+            fetch('/send-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    task: task
+                })
+            })
+                .then(response => {
+                    if (response.ok) {
+                        console.log("Reminder email sent successfully!");
+                    } else {
+                        console.error("Failed to send reminder email.");
+                    }
+                })
+                .catch(error => {
+                    console.error("Error occurred while sending reminder email:", error);
+                });
+        }
+
+        function setReminder(task) {
+            setTimeout(function () {
+                sendEmail(task)
+            }, 5000);
+        }
+    </script>
 </body>
 
 </html>
